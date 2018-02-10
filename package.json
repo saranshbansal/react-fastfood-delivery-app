@@ -1,0 +1,15 @@
+{
+  "name": "react-playground",
+  "version": "1.0.0",
+  "description": "A personal playground foe scribbling in react",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "react-playground"
+  },
+  "author": "saransh",
+  "license": "ISC"
+}
