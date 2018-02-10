@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-
+import Clock from './lib/clock';
 class App extends Component {
   render() {
     return (
@@ -11,7 +11,7 @@ class App extends Component {
           <h1 className="App-title">Play</h1>
         </header>
         <p className="App-intro">
-          <a href="#">Clock</a>
+          <Clock />
         </p>
       </div>
     );
