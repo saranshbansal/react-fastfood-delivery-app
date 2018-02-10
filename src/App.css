@@ -8,7 +8,7 @@
 }
 
 .App-header {
-  background-color: lightgray;
+  background-color: #24292e;
   height: 60px;
   padding: 20px;
   color: white;
@@ -30,8 +30,9 @@
 
 .clockStyle {
   float: right;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: medium;
-  color: black;
+  color: white;
   font-weight: bold;
 }
 
