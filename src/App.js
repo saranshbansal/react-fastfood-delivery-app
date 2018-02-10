@@ -1,15 +1,14 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Clock from './lib/clock';
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
+      <div className="container-fluid App">
+        <header className="row App-header">
           <Clock />
         </header>
-        <div className="container-fluid">
+        <div className="App-body">
         </div>
       </div>
     );
