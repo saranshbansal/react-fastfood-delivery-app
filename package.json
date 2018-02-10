@@ -1,10 +1,18 @@
 {
   "name": "react-playground",
   "version": "1.0.0",
-  "description": "A personal playground foe scribbling in react",
-  "main": "index.js",
+  "description": "A personal playground for scribbling in react.",
+  "private": true,
+  "dependencies": {
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-scripts": "1.1.1"
+  },
   "scripts": {
-    "test": "test"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
   },
   "repository": {
     "type": "git",
