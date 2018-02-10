@@ -8,18 +8,27 @@
 }
 
 .App-header {
-  background-color: #222;
-  height: 150px;
+  background-color: lightgray;
+  height: 60px;
   padding: 20px;
   color: white;
 }
 
 .App-title {
   font-size: 1.5em;
+  color: black;
+  font-weight: bold;
 }
 
 .App-intro {
   font-size: large;
+}
+
+.clockStyle {
+  float: right;
+  font-size: medium;
+  color: black;
+  font-weight: bold;
 }
 
 @keyframes App-logo-spin {

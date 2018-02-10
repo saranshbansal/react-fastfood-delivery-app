@@ -32,7 +32,7 @@ class Clock extends React.Component {
     }
 
     render() {
-        return this.state.time;
+        return <span className="clockStyle">{this.state.time}</span>;
 
     }
 }
