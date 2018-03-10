@@ -7,6 +7,8 @@ export default class Dashboard extends Component {
         items: ['Item 1', 'Item 2', 'Item 3', 'Item 4', 'Item 5', 'Item 6'],
     };
     onSortEnd = ({ oldIndex, newIndex }) => {
+        console.log('moving...');
+        
         this.setState({
             items: arrayMove(this.state.items, oldIndex, newIndex),
         });
