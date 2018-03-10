@@ -4,7 +4,7 @@ import { arrayMove } from 'react-sortable-hoc';
 
 export default class Dashboard extends Component {
     state = {
-        items: ['Item 1', 'Item 2', 'Item 3', 'Item 4', 'Item 5', 'Item 6'],
+        items: ['Card 1', 'Card 2', 'Card 3', 'Card 4', 'Card 5', 'Card 6'],
     };
     onSortEnd = ({ oldIndex, newIndex }) => {
         console.log('moving...');
