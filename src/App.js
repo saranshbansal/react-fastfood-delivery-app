@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Clock from './lib/clock';
-import SortableComponent from './components/DnD/DragAndDrop';
+import Dashboard from './components/Dashboard/Dashboard';
 class App extends Component {
   render() {
     return (
@@ -9,7 +9,7 @@ class App extends Component {
           <Clock />
         </header>
         <div className="App-body">
-          <SortableComponent />
+          <Dashboard />
         </div>
       </div>
     );

@@ -6,6 +6,6 @@ body {
 
 @media only screen and (orientation: landscape) {
     body {
-        background-color: lightblue;
+        background-color: #f4f4f4;
     }
 }

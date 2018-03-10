@@ -33,7 +33,7 @@ export default class SortableComponent extends Component {
     render() {
         return (
             <div className="Showcase__Content__root">
-                <SortableList className="Showcase__style__list Showcase__style__stylizedList" items={this.state.items} onSortEnd={this.onSortEnd} useDragHandle={true} />
+                <SortableList className="Showcase__style__list Showcase__style__stylizedList" items={this.state.items} onSortEnd={this.onSortEnd} useDragHandle={false} />
             </div>
         );
     }
