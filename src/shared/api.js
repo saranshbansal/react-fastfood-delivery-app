@@ -1,25 +1,25 @@
-import * as request from 'superagent';
+import axios from 'axios';
 
-export function getPlanetSuggestions(input, uri, sucessCB, errorCB) {
-    request.get(uri + input).end((error, response) => {
-        if (error && errorCB) {
-            //  Call error call back
-            errorCB(error);
-        } else if (sucessCB) {
-            //  Call sucess call back
-            sucessCB(response);
-        }
+export function getPlanetSuggestions(uri, inputParms) {
+    axios.get(uri + inputParms)
+    .then((error, response) => {
+        console.log(response);
+        return response;
+    })
+    .catch(error => {
+        console.log(error);
+        return error;
     });
 }
 
-export function getAllPlanets(uri, sucessCB, errorCB) {
-    request.get(uri).end((error, response) => {
-        if (error && errorCB) {
-            //  Call error call back
-            errorCB(error);
-        } else if (sucessCB) {
-            //  Call sucess call back
-            sucessCB(response);
-        }
+export function getAllPlanets(uri) {
+    axios.get(uri)
+    .then((response) => {
+        console.log(response);
+        return response;
+    })
+    .catch(error => {
+        console.log(error);
+        return error;
     });
 }
