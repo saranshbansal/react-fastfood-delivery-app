@@ -20,10 +20,6 @@
   font-weight: bold;
 }
 
-.App-body{
-  
-}
-
 .App-intro {
   font-size: large;
 }
@@ -31,7 +27,7 @@
 .clockStyle {
   float: right;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: medium;
+  font-size: 1em;
   color: white;
   font-weight: bold;
 }
