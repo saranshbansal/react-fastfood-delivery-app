@@ -1,6 +1,6 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom'
-import App from '../app.js';
+import App from '../App.js';
 
 const Routes = () => (
     <div>

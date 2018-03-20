@@ -1,11 +1,8 @@
 import { applyMiddleware, compose, createStore, combineReducers } from 'redux';
 import { createLogger } from 'redux-logger';
-// import dashboardReducer from '../modules/dashboard/reducer.js';
-// import authenticationReducer from '../modules/login/reducer.js';
 
 const rootReducer = combineReducers({
-    // dashboardReducer,
-    // authenticationReducer
+    //[...reducers.js]
 });
 
 const initialState = {};

@@ -1,7 +1,7 @@
 {
-  "name": "react-playground",
+  "name": "react-redux-starter",
   "version": "1.0.0",
-  "description": "A personal playground for scribbling in react.",
+  "description": "Simple, Straightforward, bare-minimum code to get started with your new React + Redux application.",
   "private": true,
   "dependencies": {
     "chai": "^4.1.2",
@@ -10,13 +10,10 @@
     "history": "^4.7.2",
     "react": "^16.2.0",
     "react-bootstrap": "^0.32.1",
-    "react-dnd": "^2.5.4",
-    "react-dnd-html5-backend": "^2.5.4",
     "react-dom": "^16.2.0",
     "react-redux": "^5.0.6",
     "react-router-dom": "^4.2.2",
     "react-scripts": "1.1.1",
-    "react-sortable-hoc": "^0.6.8",
     "react-test-renderer": "^16.2.0",
     "redux": "^3.7.2",
     "redux-logger": "^3.0.6"
@@ -33,7 +30,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "react-playground"
+    "url": "react-redux-starter"
   },
   "author": "saransh",
   "license": "ISC"

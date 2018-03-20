@@ -8,8 +8,6 @@ import store from './shared/store.js';
 import Routes from './shared/routes.js';
 import registerServiceWorker from './registerServiceWorker';
 import './assets/css/app.css';
-import './assets/css/index.css';
-import './assets/css/dnd.css';
 
 window._app_container = document.getElementById('root');
 
