@@ -9,18 +9,25 @@ class Cart extends Component {
     }
 
     render() {
+        let total = 0.0;
         let summaryJsx = this.props.selectedItems && this.props.selectedItems.map((item) => {
+            total += item.price;
             return(
-                <table class="table">
-                    <tr class="col col-md-8 col-xs-10">
-                        {item.name + " X $" + item.price + ' = '}
-                    </tr>
-                    <tr class="col col-md-4 col-xs-2">
+                <tr>
+                    <td>
+                        {item.name}
+                    </td>
+                    <td>{' X '}</td>
+                    <td>
+                        {item.price}
+                    </td>
+                    <td>{' = '}</td>
+                    <td>
                         <b>
                             {'$' + item.price}
                         </b>
-                    </tr>
-                </table>
+                    </td>
+                </tr>
             );
         });
         return (
@@ -29,10 +36,12 @@ class Cart extends Component {
                     {'Order Summary (' + this.props.selectedItems.length + ')'}
                 </div>
                 <br/>
-                {summaryJsx}
+                <table class="table">
+                    {summaryJsx}
+                </table>
                 <br/>
-                <div>
-                    {'Total: $'}
+                <div className="cart-total">
+                    {'Total: $' + total}
                 </div>
             </div>
         );

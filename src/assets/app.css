@@ -14,7 +14,13 @@ body, html { margin: 0; padding: 0; }
     background: white;
     border: 2px solid white;
     border-radius: 4px;
-    padding: 5px; 
+    padding: 5px;
+}
+
+.cart-total {
+    font-size: 32px;
+    font-weight: bold;
+    color: #3fb083;
 }
 
 .hr {
