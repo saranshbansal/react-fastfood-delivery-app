@@ -1,11 +1,11 @@
 import { applyMiddleware, compose, createStore, combineReducers } from 'redux';
 import { createLogger } from 'redux-logger';
-import MenuReducer from '../modules/Menu/reducer';
-import OrderReducer from '../modules/Order/reducer';
+import DashboardReducer from '../modules/Dashboard/reducer';
+import CartReducer from '../modules/Cart/reducer';
 
 const rootReducer = combineReducers({
-    MenuReducer,
-    OrderReducer
+    DashboardReducer,
+    CartReducer
 });
 
 const initialState = {};

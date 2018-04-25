@@ -1,4 +1,4 @@
-export default function MenuReducer(state = {
+export default function DashboardReducer(state = {
   items: []
 }, action) {
   switch (action.type) {

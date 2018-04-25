@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import * as actions from './action.js';
+import * as actions from '../Cart/action';
 import MenuItem from './menuItem';
 
 class MenuItemList extends Component {
@@ -46,8 +46,8 @@ class MenuItemList extends Component {
 
 function mapStateToProps(state) {
     return {
-        items: state.MenuReducer.items,
-        selectedItems: state.OrderReducer.selection
+        items: state.DashboardReducer.items,
+        selectedItems: state.CartReducer.selection
     };
 }
 

@@ -6,6 +6,10 @@ export default function OrderReducer(state = {
       {
         return Object.assign({}, state, { selection: action.payload});
       }
+    case 'CHECKOUT_AND_RESET_SELECTION':
+      {
+        return Object.assign({}, state, { selection: [] });
+      }
     default:
       return state;
   }

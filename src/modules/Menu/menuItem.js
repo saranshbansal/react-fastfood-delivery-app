@@ -14,8 +14,9 @@ const MenuItem = (props) => {
                         value={props.data.rating}
                     />
                     <hr />
-                    <span className="card-price">{'Price - $' + props.data.price}</span>
-                    {'Options: ' + props.data.options.toString()}
+                    <span className="card-price">{'Price - ₹' + props.data.price}</span>
+                    <br /><br />
+                    <span className="ingredients">{'Ingredients: ' + props.data.ingredients.toString()}</span>
                 </div>
             </div>
             <button onClick={e => props.addToCart(props.data)}>Add to Order</button>
