@@ -1,8 +1,11 @@
 import { applyMiddleware, compose, createStore, combineReducers } from 'redux';
 import { createLogger } from 'redux-logger';
+import MenuReducer from '../modules/Menu/reducer';
+import OrderReducer from '../modules/Order/reducer';
 
 const rootReducer = combineReducers({
-    //[...reducers.js]
+    MenuReducer,
+    OrderReducer
 });
 
 const initialState = {};

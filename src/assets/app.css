@@ -1,50 +1,11 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
-}
-
 @media only screen and (orientation: landscape) {
     body {
         background-color: #f4f4f4;
     }
 }
 
-.App {
-  text-align: center;
-}
+body, html { margin: 0; padding: 0; }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.App-header {
-  background-color: #24292e;
-  height: 60px;
-  padding: 20px;
-  color: white;
-}
-
-.App-title {
-  font-size: 1.5em;
-  color: black;
-  font-weight: bold;
-}
-
-.App-intro {
-  font-size: large;
-}
-
-.clockStyle {
-  float: right;
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 1em;
-  color: white;
-  font-weight: bold;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.jumbotron {
+  background: greenyellow;
 }

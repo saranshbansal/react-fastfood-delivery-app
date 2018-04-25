@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
 import Dashboard from './modules/Dashboard/Dashboard';
+
 class App extends Component {
   render() {
     return (
-      <div className="container-fluid App">
-        <header className="row App-header">
-          <Clock />
-        </header>
-        <div className="App-body">
-          <Dashboard />
+      <div className="container-fluid">
+        <div class="jumbotron">
+          <h1>Order & Out</h1>
+          <p>A web application that allows users to order food.</p>
         </div>
+        <Dashboard />
       </div>
     );
   }

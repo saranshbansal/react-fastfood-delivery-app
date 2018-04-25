@@ -4,6 +4,7 @@
   "description": "Simple, Straightforward, bare-minimum code to get started with your new React + Redux application.",
   "private": true,
   "dependencies": {
+    "axios": "^0.18.0",
     "chai": "^4.1.2",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",

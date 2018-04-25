@@ -1,13 +1,5 @@
 import axios from 'axios';
-
-export function sampleApiCall(uri, inputParms) {
-    axios.get(uri + inputParms)
-    .then((error, response) => {
-        console.log(response);
-        return response;
-    })
-    .catch(error => {
-        console.log(error);
-        return error;
-    });
+//'https://demo0444860.mockable.io/getItems'
+export function getAllItems() {
+    return axios.get('https://demo0444860.mockable.io/getItems');
 }
