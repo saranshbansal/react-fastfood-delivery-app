@@ -35,11 +35,11 @@ class Dashboard extends Component {
 
     render() {
         return (
-            <div>
-                <div className="col col-md-12 col-xs-12">
+            <div style={{display: 'inline-block'}}>
+                <div className="col col-md-9 col-xs-7">
                     <MenuItemList />
                 </div>
-                <div className="col col-md-12 col-xs-12">
+                <div className="col col-md-3 col-xs-5">
                     <Cart 
                         handleCheckout={this.handleCheckout}
                     />

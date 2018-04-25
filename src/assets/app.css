@@ -9,3 +9,14 @@ body, html { margin: 0; padding: 0; }
 .jumbotron {
   background: greenyellow;
 }
+
+.cart-container {
+    background: white;
+    border: 2px solid white;
+    border-radius: 4px;
+    padding: 5px; 
+}
+
+.hr {
+    border-bottom: 2px solid gray;
+}

@@ -1,21 +1,24 @@
 import React from 'react';
+import StarRatingComponent from 'react-star-rating-component';
 
 const MenuItem = (props) => {
     return (
         <div className="col-xs-12 col-md-12 card-container">
             <div className="card">
                 <div className="card-block">
-                    <div>
-                        <h3 className="card-title">{props.data.name}</h3>
-                        <p>
-                            {'Ratings: ' + props.data.rating}
-                        </p>
-                    </div>
+                    <span className="card-title">{props.data.name}</span>
+                    <br/>
+                    <StarRatingComponent
+                     name="ono-rating" 
+                        starCount={5}
+                        value={props.data.rating}
+                    />
                     <hr />
-                    <p className="card-price">{'Price - $' + props.data.price}</p>
+                    <span className="card-price">{'Price - $' + props.data.price}</span>
                     {'Options: ' + props.data.options.toString()}
                 </div>
             </div>
+            <button onClick={e => props.addToCart(props.data)}>Add to Order</button>
         </div>
     );
 };

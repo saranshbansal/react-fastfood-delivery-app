@@ -11,7 +11,9 @@ class MenuItemList extends Component {
     }
 
     addToSelection = (data) => {
-        this.props.addItemToSelection(data);
+        const arr = [...this.props.selectedItems];
+        arr.push(data);
+        this.props.addItemToSelection(arr);
     }
 
     render() {
@@ -26,8 +28,8 @@ class MenuItemList extends Component {
             });
 
             return (
-                <div key={index} className="col-md-3 col-xs-3">
-                    <h2>
+                <div key={index} className="col-md-3 col-sm-4 col-xs-6">
+                    <h2 className="category">
                         {menu.categoryName}
                     </h2>
                     {itemsInMenu}
@@ -44,7 +46,8 @@ class MenuItemList extends Component {
 
 function mapStateToProps(state) {
     return {
-        items: state.MenuReducer.items
+        items: state.MenuReducer.items,
+        selectedItems: state.OrderReducer.selection
     };
 }
 
