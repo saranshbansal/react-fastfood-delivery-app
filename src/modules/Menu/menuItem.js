@@ -13,9 +13,9 @@ const MenuItem = (props) => {
                         starCount={5}
                         value={props.data.rating}
                     />
-                    <hr />
+                    <br/>
                     <span className="card-price">{'Price - ₹' + props.data.price}</span>
-                    <br /><br />
+                    <hr />
                     <span className="ingredients">{'Ingredients: ' + props.data.ingredients.toString()}</span>
                 </div>
             </div>

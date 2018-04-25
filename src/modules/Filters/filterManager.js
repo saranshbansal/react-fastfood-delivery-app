@@ -10,7 +10,7 @@ const initialstate = {
     filterNameText: '',
     filterCategoryText: '',
     filterRatingText: '',
-    filterPriceText: ''    
+    filterPriceText: ''
 };
 class Filters extends Component {
 
@@ -45,6 +45,15 @@ class Filters extends Component {
         let array = this.state.allItems || [];
         if (ops === 'category') {
             filterCategoryText = filterText;
+            array = array.filter((obj) => {
+                let ok = true;
+
+                if (filterCategoryText !== '') {
+                    ok = (obj.categoryName === filterCategoryText);
+                }
+
+                return ok;
+            });
         } else if (ops === 'rating') {
             filterRatingText = filterText;
         } else if (ops === 'price') {
@@ -52,32 +61,26 @@ class Filters extends Component {
         } else {
             filterNameText = filterText;
         }
-        array = array.filter((obj) => {
-            let ok = true;
+        /* array = array.forEach((obj) => {
+            let filteredItems = obj.items.filter((item) => {
+                let ok = true;
 
-            if (filterCategoryText !== '') {
-                ok = (obj.categoryName === filterCategoryText);
-            }
+                if (ok && filterRatingText !== '') {
+                    ok = item.rating == filterRatingText;
+                }
 
-            if (ok && filterRatingText !== '') {
-                obj = (obj.items.filter((item) => {
-                    return item.rating == filterRatingText;
-                }));
-            }
+                if (ok && filterPriceText !== '') {
+                    ok = (item.price > filterRatingText.split(",")[0] || (item.price < filterRatingText.split(",")[1]));
+                }
 
-            if (ok && filterPriceText !== '') {
-                obj = (obj.items.filter((item) => {
-                    return (item.price > filterRatingText.split(",")[0] || (item.price < filterRatingText.split(",")[1]));
-                }));
-            }
+                if (ok && filterNameText !== '') {
+                    ok = (item.name.toLowerCase().search(filterNameText.toLowerCase()) > -1);
+                }
+                return ok;
+            });
+            obj.items = filteredItems;
 
-            if (ok && filterNameText !== '') {
-                obj = (obj.items.filter((item) => {
-                    return (item.name.toLowerCase().search(filterNameText.toLowerCase()) > -1);
-                }));
-            }
-            return ok;
-        });
+        }); */
         // set State
         this.setState({ filterNameText, filterCategoryText, filterRatingText, filterPriceText, filteredItems: array });
         this.props.filterItems(array);
