@@ -8,6 +8,7 @@ body, html { margin: 0; padding: 0; }
 
 .jumbotron {
   background: greenyellow;
+  margin-bottom: 0px;
 }
 
 .cart-container {
@@ -15,6 +16,15 @@ body, html { margin: 0; padding: 0; }
     border: 2px solid white;
     border-radius: 4px;
     padding: 5px;
+}
+
+.summary-container {
+    padding-top: 20px;
+}
+
+.filter-container {
+    background: white;
+    padding: 10px;
 }
 
 .cart-total {
@@ -40,4 +50,22 @@ body, html { margin: 0; padding: 0; }
 .success {
     font-size: 12px;
     color: yellowgreen;
+}
+
+.inputBox {
+  height: 30px;
+  width: 100%;
+  color: #222;
+  border: solid 1px #88b0c0;
+  border-radius: 3px;
+  padding: 6px;
+  font-size: 13px;
+}
+
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
 }

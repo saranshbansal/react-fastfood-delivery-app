@@ -46,7 +46,7 @@ class MenuItemList extends Component {
 
 function mapStateToProps(state) {
     return {
-        items: state.DashboardReducer.items,
+        items: state.DashboardReducer.filteredItems,
         selectedItems: state.CartReducer.selection
     };
 }

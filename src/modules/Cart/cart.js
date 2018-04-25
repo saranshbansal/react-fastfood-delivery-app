@@ -88,7 +88,6 @@ class Cart extends Component {
 
 function mapStateToProps(state) {
     return {
-        items: state.DashboardReducer.items,
         selectedItems: state.CartReducer.selection
     };
 }
