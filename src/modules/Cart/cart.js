@@ -73,7 +73,7 @@ class Cart extends Component {
                 )}
                 {this.state.checkoutAlert && (
                     <div className="cart-container">
-                        <div className="card-title success">
+                        <div className="success">
                             {'Your order is on it\'s way and will be delivered in 30 minutes.'}
                         </div>
                         <button onClick={e => this.setState({
