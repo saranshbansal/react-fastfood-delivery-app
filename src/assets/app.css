@@ -22,6 +22,11 @@ button {
   margin-bottom: 0px;
 }
 
+.jumbotron .h1 {
+    font-weight: bold;
+    font-size: 64px;
+}
+
 .category {
 	border: 1px solid #ffd400;
     padding: 6px;
@@ -87,4 +92,13 @@ button {
 
 .pull-right {
   float: right;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: red;
+}
+
+.discounted-price {
+    color: green;
 }
