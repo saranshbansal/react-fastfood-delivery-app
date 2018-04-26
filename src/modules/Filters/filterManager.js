@@ -40,7 +40,7 @@ class Filters extends Component {
         } else if (ops === 'rating') {
             filterRatingText = filterText;
         } else if (ops === 'price') {
-            filterRatingText = filterText;
+            filterPriceText = filterText;
         } else {
             filterNameText = filterText;
         }
@@ -64,7 +64,7 @@ class Filters extends Component {
                 }
 
                 if (ok && filterPriceText !== '') {
-                    ok = (item.price > filterRatingText.split(",")[0] || (item.price < filterRatingText.split(",")[1]));
+                    ok = (item.price > filterPriceText.split(",")[0] && (filterPriceText.split(",")[1] && item.price <= filterPriceText.split(",")[1]));
                 }
 
                 if (ok && filterNameText !== '') {
@@ -87,7 +87,7 @@ class Filters extends Component {
                 filterCategoryText={this.state.filterCategoryText}
                 filterRatingText={this.state.filterRatingText}
                 filterNameText={this.state.filterNameText}
-                filterPriceText={this.filterPriceText}
+                filterPriceText={this.state.filterPriceText}
                 handleFilteration={this.handleFilteration}
             />
         );
