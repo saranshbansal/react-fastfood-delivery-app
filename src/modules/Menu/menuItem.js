@@ -5,6 +5,7 @@ const MenuItem = (props) => {
     const op = Number(props.data.price);
     const d = Number(props.data.discount);
     let finalPrice = op - (Number(op) * Number(d) / 100);
+    props.data.discountPrice = finalPrice;
     return (
         <div className="col-xs-12 col-md-12 card-container">
             <div className="card">

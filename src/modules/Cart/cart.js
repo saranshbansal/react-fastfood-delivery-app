@@ -29,7 +29,7 @@ class Cart extends Component {
     render() {
         let total = 0.0;
         let summaryJsx = this.props.selectedItems && this.props.selectedItems.map((item, index) => {
-            total += item.price;
+            total += item.discountPrice;
             return (
                 <tr key={index}>
                     <td>
@@ -40,12 +40,12 @@ class Cart extends Component {
                     </td>
                     <td>{' X '}</td>
                     <td>
-                        {'₹' + item.price}
+                        {'₹' + item.discountPrice}
                     </td>
                     <td>{' = '}</td>
                     <td>
                         <b>
-                            {'₹' + item.price}
+                            {'₹' + item.discountPrice}
                         </b>
                     </td>
                 </tr>
@@ -59,7 +59,7 @@ class Cart extends Component {
                             {'ORDER SUMMARY'}
                         </div>
                         <br />
-                        <table className="table">
+                        <table className="table table-striped">
                             <tbody>
                                {summaryJsx}
                             </tbody>
