@@ -64,7 +64,8 @@ class Filters extends Component {
                 }
 
                 if (ok && filterPriceText !== '') {
-                    ok = (item.price > filterPriceText.split(",")[0] && (filterPriceText.split(",")[1] && item.price <= filterPriceText.split(",")[1]));
+                    const finalPrice = this.calculatePrice(item.price, item.discount);
+                    ok = (finalPrice > filterPriceText.split(",")[0] && (filterPriceText.split(",")[1] && finalPrice <= filterPriceText.split(",")[1]));
                 }
 
                 if (ok && filterNameText !== '') {
@@ -78,7 +79,11 @@ class Filters extends Component {
         // set State
         this.setState({ filterNameText, filterCategoryText, filterRatingText, filterPriceText, filteredItems: array });
         this.props.filterItems(array);
-    };
+    }
+
+    calculatePrice = (op, d) => {
+        return (op - (Number(op) * Number(d) / 100));
+    }
 
 
     render() {
