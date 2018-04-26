@@ -28,7 +28,7 @@ class MenuItemList extends Component {
             });
 
             return (
-                <div key={index} className="col-md-3 col-sm-4 col-xs-6">
+                <div key={index} className="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                     <h2 className="category">
                         {menu.categoryName}
                     </h2>

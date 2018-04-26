@@ -31,10 +31,10 @@ class Dashboard extends Component {
                 <div className="col col-md-12 col-xs-12 filter-container">
                     <Filters />
                 </div>
-                <div className="col col-md-9 col-xs-7 menu-container">
+                <div className="col col-md-9 col-xs-8 menu-container">
                     <MenuItemList />
                 </div>
-                <div className="col col-md-3 col-xs-5 summary-container">
+                <div className="col col-md-3 col-xs-4 summary-container">
                     <Cart />
                 </div>
             </div>

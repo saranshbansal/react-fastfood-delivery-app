@@ -4,11 +4,30 @@
     }
 }
 
-body, html { margin: 0; padding: 0; }
+body, html { margin: 0; padding: 0; word-break: break-all;}
+
+button {
+	color:black;
+    background: #ffd400;
+	font-size: .6em;
+    border: none;
+    width: 100%;
+    border-radius: 3px;
+    font-size: .9em;
+    padding: .6em .9em;
+}
 
 .jumbotron {
-  background: greenyellow;
+  background: #ffd400;
   margin-bottom: 0px;
+}
+
+.category {
+	border: 1px solid #ffd400;
+    padding: 6px;
+	color: black;
+	border-radius: 4px;
+    background: #ffd400;
 }
 
 .cart-container {
@@ -30,7 +49,7 @@ body, html { margin: 0; padding: 0; }
 .cart-total {
     font-size: 32px;
     font-weight: bold;
-    color: #3fb083;
+    color: black;
 }
 
 .hr {
@@ -44,7 +63,9 @@ body, html { margin: 0; padding: 0; }
 .btn-remove {
     color: white;
     background: red;
-    padding: 1px 6px;
+    border-radius: 100%;
+    padding: 1px 4px;
+    max-width: 20px;
 }
 
 .success {

@@ -8,7 +8,6 @@
     background: #fff;
     padding: 5px;
     border-radius: 5px;
-    word-wrap: break-word;
     -webkit-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
     box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
 }
@@ -57,22 +56,4 @@
 .card-title {
 	font-size: 24px;
 	font-weight: bold;
-}
-
-.category {
-	border: 1px solid;
-    padding: 6px;
-	color: white;
-	border-radius: 4px;
-    background: #3fb083;
-}
-
-button {
-	color: #fff;
-    background: #3fb083;
-	font-size: .6em;
-	border: none;
-    border-radius: 3px;
-    font-size: .9em;
-    padding: .6em .9em;
 }

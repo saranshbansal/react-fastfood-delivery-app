@@ -19,7 +19,7 @@ const MenuItem = (props) => {
                     <span className="ingredients">{'Ingredients: ' + props.data.ingredients.toString()}</span>
                 </div>
             </div>
-            <button onClick={e => props.addToCart(props.data)}>Add to Order</button>
+            <button onClick={e => props.addToCart(props.data)}>ADD</button>
         </div>
     );
 };

@@ -55,8 +55,8 @@ class Cart extends Component {
             <div>
                 {this.props.selectedItems && this.props.selectedItems.length > 0 && (
                     <div className="cart-container">
-                        <div className="card-title hr">
-                            {'Order Summary'}
+                        <div className="card-title">
+                            {'ORDER SUMMARY'}
                         </div>
                         <br />
                         <table className="table">
