@@ -22,6 +22,8 @@ class Dashboard extends Component {
         })
         .catch(error => {
             console.log(error);
+            this.props.loadFoodItems([]);
+            this.props.filterMenu([]);
         });
     }
 
