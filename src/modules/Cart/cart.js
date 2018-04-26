@@ -33,7 +33,7 @@ class Cart extends Component {
             return (
                 <tr key={index}>
                     <td>
-                        <button className="btn-remove" onClick={e => this.removeItemFromCart(index)} >{'x'}</button>
+                        <span className="btn-remove" onClick={e => this.removeItemFromCart(index)} >{'x'}</span>
                     </td>
                     <td>
                         {item.name}

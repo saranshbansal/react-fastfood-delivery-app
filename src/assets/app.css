@@ -61,11 +61,9 @@ button {
 }
 
 .btn-remove {
-    color: white;
-    background: red;
-    border-radius: 100%;
-    padding: 1px 4px;
-    max-width: 20px;
+    cursor: pointer;
+    color: red;
+    font-weight: bold;
 }
 
 .success {
