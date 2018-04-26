@@ -19,19 +19,11 @@ class Filters extends Component {
         this.state = initialstate;
     }
 
-    componentWillMount() {
-        this.setState({
-            ...initialstate,
-            filteredItems: [...this.props.items],
-            allItems: [...this.props.items]
-        });
-    }
-
     componentWillReceiveProps(nextProps) {
         if (nextProps.items && nextProps.items.length > 0) {
             this.setState({
-                allItems: [...nextProps.items],
-                filteredItems: [...nextProps.items]
+                allItems: JSON.parse(JSON.stringify(nextProps.items)),
+                filteredItems: JSON.parse(JSON.stringify(nextProps.filteredItems))
             });
         }
     }
@@ -42,18 +34,9 @@ class Filters extends Component {
         let filterRatingText = this.state.filterRatingText;
         let filterNameText = this.state.filterNameText;
         let filterPriceText = this.state.filterPriceText;
-        let array = this.state.allItems || [];
+        let array = [...this.state.allItems] || [];
         if (ops === 'category') {
             filterCategoryText = filterText;
-            array = array.filter((obj) => {
-                let ok = true;
-
-                if (filterCategoryText !== '') {
-                    ok = (obj.categoryName === filterCategoryText);
-                }
-
-                return ok;
-            });
         } else if (ops === 'rating') {
             filterRatingText = filterText;
         } else if (ops === 'price') {
@@ -61,7 +44,18 @@ class Filters extends Component {
         } else {
             filterNameText = filterText;
         }
-        /* array = array.forEach((obj) => {
+        // category filter
+        array = array.filter((obj) => {
+            let ok = true;
+
+            if (filterCategoryText !== '') {
+                ok = (obj.categoryName === filterCategoryText);
+            }
+
+            return ok;
+        });
+        // other filters
+        array.forEach((obj, idx) => {
             let filteredItems = obj.items.filter((item) => {
                 let ok = true;
 
@@ -79,8 +73,8 @@ class Filters extends Component {
                 return ok;
             });
             obj.items = filteredItems;
-
-        }); */
+            array[idx] = obj;
+        });
         // set State
         this.setState({ filterNameText, filterCategoryText, filterRatingText, filterPriceText, filteredItems: array });
         this.props.filterItems(array);

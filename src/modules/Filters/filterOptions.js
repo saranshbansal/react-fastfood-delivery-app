@@ -1,5 +1,4 @@
 import React from 'react';
-import StarRatingComponent from 'react-star-rating-component';
 
 const FilterOptions = (props) => {
   return (

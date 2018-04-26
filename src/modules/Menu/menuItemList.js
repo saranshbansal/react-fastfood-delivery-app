@@ -17,7 +17,7 @@ class MenuItemList extends Component {
     }
 
     render() {
-        let menuItemMarkup = this.props.items && this.props.items.map((menu, index) => {
+        let menuItemMarkup = this.props.filteredItems && this.props.filteredItems.map((menu, index) => {
 
             let itemsInMenu = menu && menu.items.map((data) => {
                 return (<MenuItem
@@ -46,7 +46,7 @@ class MenuItemList extends Component {
 
 function mapStateToProps(state) {
     return {
-        items: state.DashboardReducer.filteredItems,
+        filteredItems: state.DashboardReducer.filteredItems,
         selectedItems: state.CartReducer.selection
     };
 }
