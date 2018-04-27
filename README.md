@@ -32,7 +32,7 @@ npm start
 * After following above steps, your browser should automatically launched. If not, open your browser and run:
 
 ```
-http://localhost:8080
+http://localhost:3000
 ```
 
 ## Built With
