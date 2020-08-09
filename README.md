@@ -11,7 +11,7 @@ These instructions will get you a copy of the project up and running on your loc
 * Install latest version of node from: [I'm the latest Node](https://nodejs.org/dist/v8.11.1/node-v8.11.1-x64.msi)
 * mock API can be found here:
 ```
-https://demo0444860.mockable.io/getItems
+http://demo0810307.mockable.io/getItems
 ```
 ### Installing
 
