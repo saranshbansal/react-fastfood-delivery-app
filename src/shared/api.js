@@ -1,5 +1,5 @@
 import axios from 'axios';
-//'https://demo0444860.mockable.io/getItems'
+
 export function getAllItems() {
-    return axios.get('https://demo0444860.mockable.io/getItems');
+    return axios.get('https://demo0810307.mockable.io/getItems');
 }

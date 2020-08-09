@@ -1,18 +1,14 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import * as api from '../../shared/api.js';
-import * as actions from './action.js';
+import Cart from '../Cart/Cart';
 import * as filterActions from '../Filters/action';
-import MenuItemList from '../Menu/menuItemList';
-import Cart from '../Cart/cart';
-import Filters from "../Filters/filterManager";
+import FilterMenu from "../Filters/FilterMenu";
+import MenuItemList from '../Menu/MenuItemList';
+import * as actions from './action.js';
+
 class Dashboard extends Component {
-
-    constructor(props, context) {
-        super(props, context);
-    }
-
     componentDidMount() {
         api.getAllItems()
         .then((response) => {
@@ -29,9 +25,9 @@ class Dashboard extends Component {
 
     render() {
         return (
-            <div style={{display: 'inline-block'}}>
+            <Fragment>
                 <div className="col col-md-12 col-xs-12 filter-container">
-                    <Filters />
+                    <FilterMenu />
                 </div>
                 <div className="col col-md-9 col-xs-8 menu-container">
                     <MenuItemList />
@@ -39,7 +35,7 @@ class Dashboard extends Component {
                 <div className="col col-md-3 col-xs-4 summary-container">
                     <Cart />
                 </div>
-            </div>
+            </Fragment>
         );
     }
 }

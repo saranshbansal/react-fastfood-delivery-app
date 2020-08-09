@@ -1,27 +1,28 @@
 {
-  "name": "react-redux-starter",
+  "name": "react-fastfood-delivery-app",
   "version": "1.0.0",
-  "description": "Simple, Straightforward, bare-minimum code to get started with your new React + Redux application.",
+  "description": "An elegant single page food ordering web application running on top of reactjs & redux.",
   "private": true,
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.18.1",
     "chai": "^4.1.2",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
     "history": "^4.7.2",
     "react": "^16.2.0",
     "react-bootstrap": "^0.32.1",
-    "react-dom": "^16.2.0",
+    "react-dom": "^16.13.1",
     "react-redux": "^5.0.6",
     "react-router-dom": "^4.2.2",
     "react-scripts": "1.1.1",
+    "react-star-rating-component": "^1.4.1",
     "react-test-renderer": "^16.2.0",
     "redux": "^3.7.2",
     "redux-logger": "^3.0.6"
   },
   "devDependencies": {
-    "bootstrap": "^3.3.7",
-    "jquery": "^3.2.1"
+    "bootstrap": "^3.4.1",
+    "jquery": "^3.5.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -31,7 +32,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "react-redux-starter"
+    "url": "https://github.com/saranshbansal/react-fastfood-delivery-app"
   },
   "author": "saransh",
   "license": "ISC"

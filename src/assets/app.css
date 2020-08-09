@@ -4,12 +4,15 @@
     }
 }
 
-body, html { margin: 0; padding: 0;}
+body, html {
+    margin: 0;
+    padding: 0;
+}
 
 button {
-	color:black;
+    color: black;
     background: #ffd400;
-	font-size: .6em;
+    font-size: .6em;
     border: none;
     width: 100%;
     border-radius: 3px;
@@ -18,8 +21,8 @@ button {
 }
 
 .jumbotron {
-  background: #ffd400;
-  margin-bottom: 0px;
+    background: #ffd400;
+    margin-bottom: 0px;
 }
 
 .jumbotron .h1 {
@@ -28,10 +31,10 @@ button {
 }
 
 .category {
-	border: 1px solid #ffd400;
+    border: 1px solid #ffd400;
     padding: 6px;
-	color: black;
-	border-radius: 4px;
+    color: black;
+    border-radius: 4px;
     background: #ffd400;
 }
 
@@ -79,21 +82,21 @@ button {
 }
 
 .inputBox {
-  height: 30px;
-  width: 100%;
-  color: #222;
-  border: solid 1px #88b0c0;
-  border-radius: 3px;
-  padding: 6px;
-  font-size: 13px;
+    height: 30px;
+    width: 100%;
+    color: #222;
+    border: solid 1px #88b0c0;
+    border-radius: 3px;
+    padding: 6px;
+    font-size: 13px;
 }
 
 .pull-left {
-  float: left;
+    float: left;
 }
 
 .pull-right {
-  float: right;
+    float: right;
 }
 
 .original-price {

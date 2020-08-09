@@ -2,14 +2,9 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import * as actions from '../Cart/action';
-import MenuItem from './menuItem';
+import MenuItem from './MenuItem';
 
 class MenuItemList extends Component {
-
-    constructor(props, context) {
-        super(props, context);
-    }
-
     addToSelection = (data) => {
         const arr = [...this.props.selectedItems];
         arr.push(data);

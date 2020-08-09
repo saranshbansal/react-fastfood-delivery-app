@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import * as actions from './action.js';
-import FilterOptions from "./filterOptions";
+import FilterOptions from "./FilterOptions";
 
 const initialstate = {
     allItems: [],
@@ -12,7 +12,7 @@ const initialstate = {
     filterRatingText: '',
     filterPriceText: ''
 };
-class Filters extends Component {
+class FilterMenu extends Component {
 
     constructor(props, context) {
         super(props, context);
@@ -60,7 +60,7 @@ class Filters extends Component {
                 let ok = true;
 
                 if (ok && filterRatingText !== '') {
-                    ok = item.rating == filterRatingText;
+                    ok = item.rating === filterRatingText;
                 }
 
                 if (ok && filterPriceText !== '') {
@@ -113,4 +113,4 @@ function mapDispatchToProps(dispatch) {
     }, dispatch);
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Filters);
+export default connect(mapStateToProps, mapDispatchToProps)(FilterMenu);
