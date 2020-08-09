@@ -4,17 +4,17 @@
   "description": "An elegant single page food ordering web application running on top of reactjs & redux.",
   "private": true,
   "dependencies": {
-    "axios": "^0.18.1",
+    "axios": "^0.19.2",
     "chai": "^4.1.2",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
     "history": "^4.7.2",
-    "react": "^16.2.0",
-    "react-bootstrap": "^0.32.1",
+    "react": "^16.3.0",
+    "react-bootstrap": "^0.32.4",
     "react-dom": "^16.13.1",
     "react-redux": "^5.0.6",
     "react-router-dom": "^4.2.2",
-    "react-scripts": "1.1.1",
+    "react-scripts": "^3.4.1",
     "react-star-rating-component": "^1.4.1",
     "react-test-renderer": "^16.2.0",
     "redux": "^3.7.2",
@@ -35,5 +35,17 @@
     "url": "https://github.com/saranshbansal/react-fastfood-delivery-app"
   },
   "author": "saransh",
-  "license": "ISC"
+  "license": "ISC",
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
 }

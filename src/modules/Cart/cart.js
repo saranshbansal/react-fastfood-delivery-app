@@ -61,7 +61,7 @@ class Cart extends Component {
                         <br />
                         <table className="table table-striped">
                             <tbody>
-                               {summaryJsx}
+                                {summaryJsx}
                             </tbody>
                         </table>
                         <br />

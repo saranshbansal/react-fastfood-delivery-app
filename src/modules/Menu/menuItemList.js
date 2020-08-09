@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import * as actions from '../Cart/action';
@@ -6,21 +6,21 @@ import MenuItem from './MenuItem';
 
 class MenuItemList extends Component {
     addToSelection = (data) => {
-        const arr = [...this.props.selectedItems];
-        arr.push(data);
-        this.props.addItemToSelection(arr);
+        const { addItemToSelection } = this.props;
+
+        addItemToSelection([...this.props.selectedItems, data]);
     }
 
     render() {
-        let menuItemMarkup = this.props.filteredItems && this.props.filteredItems.map((menu, index) => {
+        const { filteredItems } = this.props;
 
-            let itemsInMenu = menu && menu.items.map((data) => {
-                return (<MenuItem
-                    data={data}
-                    key={data.id}
-                    addToCart={this.addToSelection}
-                />);
-            });
+        let menuItemMarkup = filteredItems && filteredItems.map((menu, index) => {
+            let itemsInMenu = menu && menu.items.map(data => <MenuItem
+                data={data}
+                key={data.id}
+                addToCart={this.addToSelection}
+            />
+            );
 
             return (
                 <div key={index} className="col-lg-3 col-md-3 col-sm-6 col-xs-12">
@@ -31,11 +31,10 @@ class MenuItemList extends Component {
                 </div>
             );
         });
-        return (
-            <div>
-                {menuItemMarkup}
-            </div>
-        );
+
+        return (<Fragment>
+            {menuItemMarkup}
+        </Fragment>);
     }
 }
 
